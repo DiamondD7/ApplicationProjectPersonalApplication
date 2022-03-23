@@ -1,0 +1,20 @@
+D:\Visualrepos\PhotoGall\PhotoGall\PhotoGall\bin\Debug\netstandard2.0\PhotoGall.deps.json
+D:\Visualrepos\PhotoGall\PhotoGall\PhotoGall\bin\Debug\netstandard2.0\PhotoGall.dll
+D:\Visualrepos\PhotoGall\PhotoGall\PhotoGall\bin\Debug\netstandard2.0\ref\PhotoGall.dll
+D:\Visualrepos\PhotoGall\PhotoGall\PhotoGall\bin\Debug\netstandard2.0\PhotoGall.pdb
+D:\Visualrepos\PhotoGall\PhotoGall\PhotoGall\obj\Debug\netstandard2.0\PhotoGall.csproj.AssemblyReference.cache
+D:\Visualrepos\PhotoGall\PhotoGall\PhotoGall\obj\Debug\netstandard2.0\PhotoGall.GeneratedMSBuildEditorConfig.editorconfig
+D:\Visualrepos\PhotoGall\PhotoGall\PhotoGall\obj\Debug\netstandard2.0\App.xaml.g.cs
+D:\Visualrepos\PhotoGall\PhotoGall\PhotoGall\obj\Debug\netstandard2.0\PhotoGall.AssemblyInfoInputs.cache
+D:\Visualrepos\PhotoGall\PhotoGall\PhotoGall\obj\Debug\netstandard2.0\PhotoGall.AssemblyInfo.cs
+D:\Visualrepos\PhotoGall\PhotoGall\PhotoGall\obj\Debug\netstandard2.0\PhotoGall.csproj.CoreCompileInputs.cache
+D:\Visualrepos\PhotoGall\PhotoGall\PhotoGall\obj\Debug\netstandard2.0\XamlC.stamp
+D:\Visualrepos\PhotoGall\PhotoGall\PhotoGall\obj\Debug\netstandard2.0\PhotoGall.dll
+D:\Visualrepos\PhotoGall\PhotoGall\PhotoGall\obj\Debug\netstandard2.0\ref\PhotoGall.dll
+D:\Visualrepos\PhotoGall\PhotoGall\PhotoGall\obj\Debug\netstandard2.0\PhotoGall.pdb
+D:\Visualrepos\PhotoGall\PhotoGall\PhotoGall\obj\Debug\netstandard2.0\Detail Pages\AlbumDetailPage.xaml.g.cs
+D:\Visualrepos\PhotoGall\PhotoGall\PhotoGall\obj\Debug\netstandard2.0\Detail Pages\RemindersDetailPage.xaml.g.cs
+D:\Visualrepos\PhotoGall\PhotoGall\PhotoGall\obj\Debug\netstandard2.0\Main Pages\AlbPage.xaml.g.cs
+D:\Visualrepos\PhotoGall\PhotoGall\PhotoGall\obj\Debug\netstandard2.0\Main Pages\CalendarPage.xaml.g.cs
+D:\Visualrepos\PhotoGall\PhotoGall\PhotoGall\obj\Debug\netstandard2.0\Main Pages\ProfilePage.xaml.g.cs
+D:\Visualrepos\PhotoGall\PhotoGall\PhotoGall\obj\Debug\netstandard2.0\Test Page\AlbumPage.xaml.g.cs

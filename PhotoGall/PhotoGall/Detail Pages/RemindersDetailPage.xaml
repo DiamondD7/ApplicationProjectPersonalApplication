@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PhotoGall.RemindersDetailPage">
+    <StackLayout>
+        <Entry Placeholder="Title..." Text="{Binding Title}"/>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="620"/>
+            </Grid.RowDefinitions>
+            <Editor AutoSize="TextChanges" Text="{Binding description}"
+                Placeholder="Write something..."></Editor>
+        </Grid>
+        <Button x:Name="saveBtn" Text="Save" Clicked="saveBtn_Clicked"/>
+    </StackLayout>
+</ContentPage>

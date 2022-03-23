@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PhotoGall.MainPage"
+             BackgroundColor="#CCCCCC">
+
+    <AbsoluteLayout>
+        <RelativeLayout AbsoluteLayout.LayoutBounds="0,100,1,1" AbsoluteLayout.LayoutFlags="SizeProportional,XProportional">
+            <Image x:Name="img" Aspect="AspectFill"
+               RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=0.5}"
+                     RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width,Factor=1}"/>
+        </RelativeLayout>
+
+        <Label x:Name="descriptionlbl" Text="" IsVisible="false" FontSize="17" TextColor="Black"
+               AbsoluteLayout.LayoutBounds="0,1.93,1,490" AbsoluteLayout.LayoutFlags="PositionProportional,WidthProportional"/>
+        <Label x:Name="description2lbl" Text="" IsVisible="false" FontSize="17" TextColor="Black"
+               AbsoluteLayout.LayoutBounds="0,1.93,1,490" AbsoluteLayout.LayoutFlags="PositionProportional,WidthProportional"/>
+        <Label x:Name="description3lbl" Text="" IsVisible="false" FontSize="17" TextColor="Black"
+               AbsoluteLayout.LayoutBounds="0,1.93,1,490" AbsoluteLayout.LayoutFlags="PositionProportional,WidthProportional"/>
+        <Label x:Name="description4lbl" Text="" IsVisible="false" FontSize="17" TextColor="Black"
+               AbsoluteLayout.LayoutBounds="0,1.93,1,490" AbsoluteLayout.LayoutFlags="PositionProportional,WidthProportional"/>
+        <Label x:Name="description5lbl" Text="" IsVisible="false" FontSize="17" TextColor="Black"
+               AbsoluteLayout.LayoutBounds="0,1.93,1,490" AbsoluteLayout.LayoutFlags="PositionProportional,WidthProportional"/>
+        <Label x:Name="description6lbl" Text="" IsVisible="false" FontSize="17" TextColor="Black"
+               AbsoluteLayout.LayoutBounds="0,1.93,1,490" AbsoluteLayout.LayoutFlags="PositionProportional,WidthProportional"/>
+
+        <Button x:Name ="clearbtn" Clicked="clearbtn_Clicked" Text="Clear" BackgroundColor="Transparent" Opacity="0.5"
+                AbsoluteLayout.LayoutBounds="1.020,0.94,70,40" AbsoluteLayout.LayoutFlags="PositionProportional"/>
+
+        <Entry x:Name="entr" ClearButtonVisibility="WhileEditing" Completed="entr_Completed" Keyboard="Chat" Placeholder="Write something..." ReturnType="Done"
+               AbsoluteLayout.LayoutBounds="0,1.008,1,60" AbsoluteLayout.LayoutFlags="PositionProportional,WidthProportional"/>
+
+        <ActivityIndicator IsRunning="{Binding Source={x:Reference img}, Path=IsLoading}" Color="Black" AbsoluteLayout.LayoutBounds="0.5,0.09,40,40" AbsoluteLayout.LayoutFlags="PositionProportional"/>
+        
+        <Button ImageSource="l.png" BackgroundColor="Transparent" CornerRadius="50" x:Name="leftbtn" Clicked="leftbtn_Clicked"
+                AbsoluteLayout.LayoutBounds="0,0.3,50,100" AbsoluteLayout.LayoutFlags="PositionProportional"/>
+
+        <Button ImageSource="r.png" BackgroundColor="Transparent" CornerRadius="50" x:Name="rightbtn" Clicked="rightbtn_Clicked"
+                AbsoluteLayout.LayoutBounds="1,0.3,50,100" AbsoluteLayout.LayoutFlags="PositionProportional"/>
+
+        <Button x:Name="Profile" Clicked="Profile_Clicked" ImageSource="user.png" HorizontalOptions="Center" BackgroundColor="Transparent"
+                AbsoluteLayout.LayoutBounds="-150,0,1,60" AbsoluteLayout.LayoutFlags="YProportional,WidthProportional"/>
+        <Button x:Name="Album" ImageSource="pic.png" HorizontalOptions="CenterAndExpand" BackgroundColor="Transparent"
+                AbsoluteLayout.LayoutBounds="0,0,1,60" AbsoluteLayout.LayoutFlags="YProportional,WidthProportional"/>
+        <Button x:Name="Calendar" Clicked="Calendar_Clicked" ImageSource="calendar.png" HorizontalOptions="Center" BackgroundColor="Transparent"
+                AbsoluteLayout.LayoutBounds="150,0,1,60" AbsoluteLayout.LayoutFlags="YProportional,WidthProportional"/>
+
+    </AbsoluteLayout>
+    
+    
+
+</ContentPage>

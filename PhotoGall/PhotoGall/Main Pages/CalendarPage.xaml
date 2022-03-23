@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PhotoGall.CalendarPage"
+             BackgroundColor="#CCCCCC"
+             NavigationPage.HasBackButton="False">
+
+    <AbsoluteLayout>
+
+        <ListView x:Name="ListView" AbsoluteLayout.LayoutBounds="0,70,1,1" AbsoluteLayout.LayoutFlags="SizeProportional,XProportional"
+                  SeparatorColor="Black" HasUnevenRows="True" ItemSelected="ListView_ItemSelected">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <TextCell Text="{Binding Title}" Detail="{Binding now}">
+                        <TextCell.ContextActions>
+                            <MenuItem IsDestructive="True"
+                                      Text="Delete"
+                                      CommandParameter="{Binding .}"
+                                      x:Name="deleteBtn"
+                                      Clicked="deleteBtn_Clicked"/>
+                        </TextCell.ContextActions>
+                    </TextCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+
+        </ListView>
+
+        <Button x:Name="Profile" Clicked="Profile_Clicked" ImageSource="user.png" HorizontalOptions="Center" BackgroundColor="Transparent"
+                AbsoluteLayout.LayoutBounds="-150,0,1,60" AbsoluteLayout.LayoutFlags="YProportional,WidthProportional"/>
+        <Button x:Name="Album" Clicked="Album_Clicked" ImageSource="pic.png" HorizontalOptions="CenterAndExpand" BackgroundColor="Transparent"
+                AbsoluteLayout.LayoutBounds="0,0,1,60" AbsoluteLayout.LayoutFlags="YProportional,WidthProportional"/>
+        <Button x:Name="Calendar" ImageSource="calendar.png" HorizontalOptions="Center" BackgroundColor="Transparent"
+                AbsoluteLayout.LayoutBounds="150,0,1,60" AbsoluteLayout.LayoutFlags="YProportional,WidthProportional"/>
+
+        <Button x:Name="addBtn" ImageSource="add.png" CornerRadius="60" BackgroundColor="#CCCCCC" Clicked="addBtn_Clicked"
+                AbsoluteLayout.LayoutBounds="0.5,1,60,60" AbsoluteLayout.LayoutFlags="PositionProportional"/>
+    </AbsoluteLayout>
+</ContentPage>

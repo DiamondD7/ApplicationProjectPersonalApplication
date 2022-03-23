@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PhotoGall.AlbPage"
+             BackgroundColor="#CCCCCC"
+             NavigationPage.HasNavigationBar="False">
+    <StackLayout>
+        <AbsoluteLayout>
+
+            <Button x:Name="Profile" Clicked="Profile_Clicked" ImageSource="user.png" HorizontalOptions="Center" BackgroundColor="Transparent"
+                AbsoluteLayout.LayoutBounds="-150,0,1,60" AbsoluteLayout.LayoutFlags="YProportional,WidthProportional"/>
+            <Button x:Name="Album" ImageSource="pic.png" HorizontalOptions="CenterAndExpand" BackgroundColor="Transparent"
+                AbsoluteLayout.LayoutBounds="0,0,1,60" AbsoluteLayout.LayoutFlags="YProportional,WidthProportional"/>
+            <Button x:Name="Calendar" Clicked="Calendar_Clicked" ImageSource="calendar.png" HorizontalOptions="Center" BackgroundColor="Transparent"
+                AbsoluteLayout.LayoutBounds="150,0,1,60" AbsoluteLayout.LayoutFlags="YProportional,WidthProportional"/>
+        </AbsoluteLayout>
+        <AbsoluteLayout>
+            <CollectionView x:Name="albumList"
+                        Grid.Row="1"
+                        Margin="12,0"
+                        HorizontalOptions="FillAndExpand"
+                        VerticalOptions="FillAndExpand"
+                        ItemSizingStrategy="MeasureAllItems"
+                        SelectionMode="Single" SelectionChanged="albumList_SelectionChanged" >
+                <CollectionView.ItemsLayout>
+                    <GridItemsLayout
+                    HorizontalItemSpacing="5"
+                    Orientation="Vertical"
+                    Span="2"
+                    VerticalItemSpacing="5"/>
+                </CollectionView.ItemsLayout>
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <Frame
+                            Margin="5"
+                            Padding="0"
+                            BackgroundColor="Brown"
+                            CornerRadius="10"
+                            HorizontalOptions="FillAndExpand"
+                            VerticalOptions="Fill">
+                            <StackLayout
+                                Margin="0,0,0,10"
+                                Padding="10"
+                                HorizontalOptions="FillAndExpand"
+                                VerticalOptions="Fill"
+                                BackgroundColor="#CCCCCC">
+
+                                <Image
+                                    Aspect="AspectFit"
+                                    HeightRequest="50"
+                                    HorizontalOptions="Center"
+                                    Source="album.png"/>
+                                <Label
+                                    FontSize="18"
+                                    HorizontalOptions="Center"
+                                    HorizontalTextAlignment="Center"
+                                    Text="{Binding Name}"/>
+                            </StackLayout>
+
+                        </Frame>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+
+            </CollectionView>
+        </AbsoluteLayout>
+        
+        <Button Text="Add" Clicked="Add_Clicked"/>
+
+    </StackLayout>
+
+    
+</ContentPage>

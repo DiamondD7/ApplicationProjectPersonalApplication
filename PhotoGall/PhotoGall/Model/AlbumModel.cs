@@ -6,7 +6,6 @@ namespace PhotoGall.Model
 {
     public class AlbumModel
     {
-        int count;
         public string Name { get; set; }
         public int Id { get; set; }
 

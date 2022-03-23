@@ -46,14 +46,14 @@ namespace PhotoGall
             App.Current.MainPage = new CalendarPage();
         }
 
-        async void albumList_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        async void albumList_SelectionChanged(object sender, SelectionChangedEventArgs e) //should have done a listView however, it is necessary to use CollectionView
         {
             if (albumList.SelectedItem == null)
             {
                 return;
             }
             albumList.SelectedItem = null;
-            var selectedItem = e.CurrentSelection.FirstOrDefault() as AlbumModel;
+            var selectedItem = e.CurrentSelection.FirstOrDefault() as AlbumModel; 
             var page = new AlbumDetailPage(selectedItem);
             page.AlbumUpdated += (source, album) =>
             {
